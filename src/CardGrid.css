@@ -1,0 +1,54 @@
+div{
+    color:green;
+    font-size: 3.5rem;
+}
+h1{
+    padding-top: 1rem;
+    color:black;
+}
+span{
+    color:Red;
+}
+body{
+    overflow: hidden;
+}
+.card-container{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content:flex-start;
+    perspective: 500px;
+    width: 35rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    margin:10px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: right center;
+    transition: all 0.5s;
+}
+.rotater{
+    transform: translateX(-100%) rotateY(-180deg);
+}
+.card-face{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    line-height: 180px;
+    backface-visibility: hidden;
+}
+.front{
+    background-color: rgb(38, 224, 224);
+}
+.back{
+    background-color: bisque;
+    transform: rotateY(180deg);
+}
